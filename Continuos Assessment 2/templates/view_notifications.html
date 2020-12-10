@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h1>View Passed Alarms</h1>
+	<h2>Here are all your passed alarms: </h2>
+	{% for each_alarm in display_alarms %}
+	<label>{{each_alarm}}</label><br>
+	{% endfor %}
+</body>
+</html>

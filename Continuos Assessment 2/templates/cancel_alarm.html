@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h1>Cancel An Alarm</h1>
+	<h2>Here are the possible alarms you can cancel: </h2>
+	{% for index in cancel_options %}
+	<h2>{{index}}</h2>
+	{% endfor %}
+</body>
+<form action = "/cancel_process" method = "get">
+<label>Enter the Date and Time of the Alarm you would like to cancel: </label>
+	<input type = "datetime-local" name = "date_time"
+	<label>Enter the Reason for the Alarm you would like to cancel: </label>
+	<input type = "text" name = "reason">
+	<input type = "submit" value = "submit">
+</form>
+</html>

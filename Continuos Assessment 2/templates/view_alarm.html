@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h1>View Alarms</h1>
+	<h2>Here are all your upcoming alarms: </h2>
+	{% for alarm in display_list %}
+	<label>{{alarm}}</label><br>
+	{% endfor %}
+</body>
+</html>

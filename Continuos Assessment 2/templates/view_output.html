@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h1>Here are the alarms for the date selected: </h1>
+	{% for element in display_list %}
+	<label>{{element}}<label>
+	{% endfor %}
+</body>
+
+<form action = "/" method = "get">
+	<input type = "submit" value = "Next">
+</form>
+
+
+</html>
